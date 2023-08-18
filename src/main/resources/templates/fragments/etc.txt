@@ -1,0 +1,23 @@
+/index
+/myAccount
+/register
+/login
+/myShopping - orderinformation
+/myPayment - orderhistory
+/myDelivery
+/searchResult
+/cart
+/wishList
+/payment - checkout
+/categoryV1
+/categoryV2
+/categoryV3
+/productV1
+/productV2
+/contact
+/about
+/sitemap
+/faq
+/event
+/dealerShop
+/quickView

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/front/common :: head">
+</head>
+<body class="res layout-1 layout-subpage">
+
+    <div id="wrapper" class="wrapper-fluid banners-effect-5">
+	<th:block th:replace="fragments/front/common :: headerMenu"></th:block>
+        <div class="main-container container">
+            <ul class="breadcrumb">
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
+                <li><a href="#">Site Map</a></li>
+
+            </ul>
+
+            <div class="row">
+                <div id="content" class="col-sm-12">
+
+                    <h2 class="title">Site Map</h2>
+                    <div class="row">
+
+                        <div class="col-md-5 col-sm-6">
+                            <ul class="simple-list arrow-list bold-list">
+
+                                <li><a href="">Watches</a>
+                                    <ul>
+                                        <li><a href="">Men's Watches</a> </li>
+                                        <li><a href="">Women's Watches</a> </li>
+                                        <li><a href="">Kids' Watches</a> </li>
+                                        <li><a href="">Accessories</a> </li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="">Health &amp; Beauty</a>
+                                    <ul>
+                                        <li><a href="">Perfumes</a> </li>
+                                        <li><a href="">Makeup</a> </li>
+                                        <li><a href="">Sun Care</a> </li>
+                                        <li><a href="">Skin Care</a> </li>
+                                        <li><a href="">Eye Care</a> </li>
+                                        <li><a href="">Hair Care</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Kids &amp; Babies</a>
+                                    <ul>
+                                        <li><a href="">Toys</a> </li>
+                                        <li><a href="">Games</a>
+                                            <ul>
+                                                <li><a href="">test 25</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Puzzles</a> </li>
+                                        <li><a href="">Hobbies</a> </li>
+                                        <li><a href="">Strollers</a> </li>
+                                        <li><a href="">Health &amp; Safety</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Sports</a>
+                                    <ul>
+                                        <li><a href="">Cycling</a> </li>
+                                        <li><a href="">Running</a> </li>
+                                        <li><a href="">Swimming</a> </li>
+                                        <li><a href="">Football</a> </li>
+                                        <li><a href="">Golf</a> </li>
+                                        <li><a href="">Windsurfing</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Home &amp; Garden</a>
+                                    <ul>
+                                        <li><a href="">Bedding</a> </li>
+                                        <li><a href="">Food</a> </li>
+                                        <li><a href="">Furniture</a> </li>
+                                        <li><a href="">Kitchen</a> </li>
+                                        <li><a href="">Lighting</a> </li>
+                                        <li><a href="">Tools</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Wines &amp; Spirits</a>
+                                    <ul>
+                                        <li><a href="">Wine</a> </li>
+                                        <li><a href="">Whiskey</a> </li>
+                                        <li><a href="">Vodka</a> </li>
+                                        <li><a href="">Liqueurs</a> </li>
+                                        <li><a href="">Beer</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <ul class="simple-list arrow-list bold-list">
+                                <li><a href="#">Special Offers</a>
+                                </li>
+                                <li><a href="my-account.html">My Account</a>
+                                    <ul>
+                                        <li><a href="order-history.html">Order History</a>
+                                        </li>
+                                        <li><a href="order-information.html">Order Information</a>
+                                        </li>
+                                        <li><a href="return.html">Return</a>
+                                        </li>
+                                        <li><a href="gift-voucher.html">Gift Voucher</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="cart.html">Shopping Cart</a>
+                                </li>
+                                <li><a href="checkout.html">Checkout</a>
+                                </li>
+                                <li><a href="search.html">Search</a>
+                                </li>
+                                <li>Information
+                                    <ul class="sitemap">
+                                        <li><a href="about-us.html">About Us</a>
+                                        </li>
+                                        <li><a href="email-template" target="_blank">Email Template Page</a>
+                                        </li>
+                                        <li><a href="elements.html">Elements</a>
+                                        </li>
+                                        <li><a href="elements-forms.html">Forms</a>
+                                        </li>
+                                        <li><a href="careers.html">Careers</a>
+                                        </li>
+                                        <li><a href="faq.html">Faq</a>
+                                        </li>
+                                        <li><a href="404.html">404</a>
+                                        </li>
+                                        <li><a href="contact-us">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <th:block th:replace="fragments/front/common :: footer"></th:block>
+    </div>
+   <th:block th:replace="fragments/front/common :: scriptSrc"></th:block>
+    <script type="text/javascript">
+        // Check if Cookie exists
+        if ($.cookie('display')) {
+            view = $.cookie('display');
+        } else {
+            view = 'grid';
+        }
+        if (view) display(view);
+	</script>
+</body>
+
+</html>
