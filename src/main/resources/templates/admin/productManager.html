@@ -11,9 +11,9 @@
 	<div id="layout-wrapper">
 
 		<header id="page-topbar"
-			th:replace="/fragments/admin/common :: headMenu"> </header>
+			th:replace="fragments/admin/common :: headMenu"> </header>
 
-		<th:block th:replace="/fragments/admin/common :: sideMenu"></th:block>
+		<th:block th:replace="fragments/admin/common :: sideMenu"></th:block>
 		<div class="vertical-overlay"></div>
 
 		<div class="main-content">
@@ -437,10 +437,10 @@
 				</div>
 				<!-- container-fluid -->
 			</div>
-			<th:block th:replace="/fragments/admin/common :: foot"></th:block>
+			<th:block th:replace="fragments/admin/common :: foot"></th:block>
 		</div>
 	</div>
-	<th:block th:replace="/fragments/admin/common :: footCon"></th:block>
+	<th:block th:replace="fragments/admin/common :: footCon"></th:block>
 	<script src="/admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/admin/assets/libs/simplebar/simplebar.min.js"></script>
     <script src="/admin/assets/libs/node-waves/waves.min.js"></script>
